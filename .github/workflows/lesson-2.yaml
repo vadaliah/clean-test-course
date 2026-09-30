@@ -34,6 +34,6 @@ jobs:
         working-directory: backend
       - name: Run unit tests
         run: |
-          coverage run --source=./hangry_api -m pytest tests/unit --maxfail=1 --disable-warnings -q
+          coverage run --source=./hangry_api -m pytest hangry_api/tests --maxfail=1 --disable-warnings -q
           coverage report -m
         working-directory: backend
