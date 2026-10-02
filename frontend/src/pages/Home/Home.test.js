@@ -52,6 +52,7 @@ describe('Test Home', () => {
     expect(await screen.findByText('Appeteasers')).toBeInTheDocument();
   });
 
+
   test('Negative Test: Test Failed Category call', async () => {
     //Arrange: Setup the mock API
     //Listen for any GET requests using the axios module
