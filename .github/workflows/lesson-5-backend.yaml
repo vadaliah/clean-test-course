@@ -21,6 +21,8 @@ jobs:
         uses: tonybaloney/pycharm-security@1.25.1
       - name: ZAP Baseline Scan
         uses: zaproxy/action-baseline@v0.15.0
+        with: 
+          target: 'https://hangryhippo.quantic.host'
   unit_test:
     runs-on: ubuntu-latest
     needs: [security_test]
